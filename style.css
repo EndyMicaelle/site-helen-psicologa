@@ -100,7 +100,12 @@ li {
 .lista {
     margin-left: 70px;
     list-style: disc;
-    line-height: 40px;
+    
+}
+
+li {
+    line-height: 1.5em;
+    padding: 20px;
 }
 
 .flex {
@@ -171,4 +176,8 @@ footer {
 .social-media, a {
 	color: #fff;
 	text-decoration: none;
+}
+
+.foto {
+    float: right;
 }
