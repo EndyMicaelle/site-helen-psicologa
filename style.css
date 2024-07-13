@@ -183,6 +183,11 @@ footer {
         margin: 50px;
     }
 
+    .whats{
+        width: 80px;
+        margin: 20px 60px 0 0;
+    }
+
     footer{
         text-align: center;
     }
