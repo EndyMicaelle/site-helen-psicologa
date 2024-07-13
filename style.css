@@ -26,25 +26,23 @@ body {
     align-items: center;
 }
 
+.container {
+    display: flex;
+    gap: 2px;
+}
+
 .img-sobre-mim {
     width: 90%;
-    margin: 80px auto;
+    margin: 5px auto;
     padding: 70px;
-    position: relative;
-    float: left;
     text-align: center;
-    
+       
 }
 
 h2 {
     padding: 20px;
     text-align: center;
     color: white;
-}
-
-.container {
-    display: flex;
-    gap: 2px;
 }
 
 h1 {
@@ -80,7 +78,7 @@ li {
     
 } 
 
-.lista {
+.list {
     margin-left: 70px;
     list-style: disc;
     
@@ -90,12 +88,6 @@ li {
 li {
     line-height: 1.5em;
     padding: 20px;
-}
-
-.flex {
-    display: block;
-    padding: 50px;
-    margin: 50px;
 }
 
 .photo {
@@ -167,6 +159,32 @@ footer {
 	text-decoration: none;
 }
 
-.foto {
-    float: right;
+@media screen and (max-width: 1020px){
+    .container{
+        flex-direction: column;
+    }
+
+    .img-sobre-mim .container{
+        flex-direction: column-reverse;
+
+    }
+
+    .container .img-sobre-mim{
+        width: 100%;
+    }
+
+    .card{
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .card-2{
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    footer{
+        text-align: center;
+    }
+
 }
